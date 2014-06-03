@@ -1,4 +1,4 @@
-*/
-!.gitignore
-!src/
-!image/
+bin/
+.settings/
+.classpath
+.project
