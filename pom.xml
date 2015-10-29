@@ -25,7 +25,7 @@
     </plugins>
     <groups>
   <group>
-    <title>Core Packages</title>
+    <title>2048</title>
     <packages>net.awiede.test</packages>
   </group>
  
