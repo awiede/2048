@@ -1,47 +1,61 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>2048</groupId>
-  <artifactId>2048</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>2048</groupId>
+	<artifactId>parent</artifactId>
+	<name>parent</name>
+	<url>http://maven.apache.org</url>
+	<packaging>jar</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
 		<jdk.home>${java.home}/..</jdk.home>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
 <build>
-   <plugins>
-	   <plugin>
-	     	<groupId>org.apache.maven.plugins</groupId>
-	        <artifactId>maven-javadoc-plugin</artifactId>
-	        <version>2.8</version>
-	        <executions>
-	        	<execution>
-	            	<id>attach-javadocs</id>
-	                <goals>
-	                	<goal>jar</goal>
-	                </goals>
-	            </execution>
-	        </executions>
-	    </plugin>
-    </plugins>
-    
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>2.8</version>
+			<executions>
+				<execution>
+					<id>attach-javadocs</id>
+					<goals>
+						<goal>jar</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+
 </build>
 
 <reporting>
-        <plugins>
-             <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.8</version>
-                    <configuration>
-						<groups>
-							<group>
-								<title>2048</title>
-								<packages>net.awiede.test</packages>
-							</group>
-						</groups>
-                    </configuration>
-            </plugin>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-javadoc-plugin</artifactId>
+			<version>2.8</version>
+			<configuration>
+				<groups>
+					<group>
+						<title>2048</title>
+						<packages>net.awiede.test</packages>
+					</group>
+				</groups>
+			</configuration>
+		</plugin>
 
-        </plugins>
-    </reporting>
+	</plugins>
+</reporting>
 </project>
