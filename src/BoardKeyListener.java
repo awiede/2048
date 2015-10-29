@@ -7,7 +7,6 @@ import javax.swing.JFrame;
 public class BoardKeyListener implements KeyListener {
 
 
-	@Override
 	public void keyPressed(KeyEvent e) {
 		System.out.println("Inside keyPressed");
 		int keyCode = e.getKeyCode();
@@ -47,13 +46,11 @@ public class BoardKeyListener implements KeyListener {
 		
 	}
 
-	@Override
 	public void keyReleased(KeyEvent arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void keyTyped(KeyEvent e) {
 		System.out.println("Inside keyTyped");
 	}

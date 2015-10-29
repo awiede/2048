@@ -4,8 +4,19 @@ import java.awt.Graphics;
 import javax.swing.JComponent;
 
 
+/**
+ * 
+ * 
+ * @author andreas.s.wiede
+ * @since now
+ */
 public class Board extends JComponent {
 
+	/**
+	 *  This is a constructor for the board.
+	 *  
+	 *  And my first javadoc in this project!!! 
+	 */
 	public Board() {
 		
 	}
