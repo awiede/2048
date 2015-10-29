@@ -1,5 +1,6 @@
+package net.awiede.test;
 
-public class T64 {
+public class T32 {
 
 	/**
 	 * @param args

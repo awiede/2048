@@ -23,6 +23,13 @@
 	        </executions>
 	    </plugin>
     </plugins>
+    <groups>
+  <group>
+    <title>Core Packages</title>
+    <packages>net.awiede.test</packages>
+  </group>
+ 
+</groups>
 </build>
 
 <reporting>

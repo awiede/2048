@@ -1,3 +1,4 @@
+package net.awiede.test;
 import javax.swing.ImageIcon;
 
 

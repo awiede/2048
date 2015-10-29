@@ -1,3 +1,4 @@
+package net.awiede.test;
 import java.awt.Color;
 import java.awt.Graphics;
 
