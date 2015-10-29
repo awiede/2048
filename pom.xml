@@ -23,13 +23,7 @@
 	        </executions>
 	    </plugin>
     </plugins>
-    <groups>
-  <group>
-    <title>2048</title>
-    <packages>net.awiede.test</packages>
-  </group>
- 
-</groups>
+    
 </build>
 
 <reporting>
@@ -38,6 +32,14 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.8</version>
+                    <configuration>
+						<groups>
+							<group>
+								<title>2048</title>
+								<packages>net.awiede.test</packages>
+							</group>
+						</groups>
+                    </configuration>
             </plugin>
 
         </plugins>
